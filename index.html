@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="hero">
+    <h1>🎬 Movie Recommendation System</h1>
+    <p>Discover Trending Movies, Thrillers, Comedy </p>
+    </div>
+
+    <!-- Search Bar -->
+    <input type="text" placeholder="🔍 Search Movies" class="search-box">
+
+    <br><br>
+
+    <!-- Genre Buttons -->
+    <button class="genre-btn" onclick="recommendMovie('action')">Action</button>
+    <button class="genre-btn" onclick="recommendMovie('comedy')">Comedy</button>
+    <button class="genre-btn" onclick="recommendMovie('thriller')">Thriller</button>
+
+    <!-- Movie Rows -->
+    <h2>🔥 Trending Movies</h2>
+    <div class="movie-row">
+        <img src="./images/endgame.jpg" alt="Endgame">
+        <img src="./images/avengers.jpg" alt="Avengers">
+        <img src="./images/interstellar.jpg" alt="Interstellar">
+        <img src="./images/faultinourstars.jpg" alt="Fault in Our Stars">
+        <img src="./images/fivefeetapart.jpg" alt="Five Feet Apart">
+        <img src="./images/myoxfordyear.jpg" alt="My Oxford Year"> 
+        
+    </div>
+<img src="images/notebook.jpg">
+<img src="images/toalltheboys.jpg">
+<img src="images/lastsong.jpg">      
+    </div>
+
+    <h2>😂 Comedy Movies</h2>
+    <div class="movie-row">
+        <div class="movie-row">
+    <img src="images/hangover.jpg" alt="Hangover">
+    <img src="images/homealone.jpg" alt="Home Alone">
+    <img src="images/minions.jpg" alt="Minions">
+    <img src="images/jumanji.jpg" alt="Jumanji">
+    <img src="images/meanGirls.jpg" alt="Mean Girls">
+    <img src="images/ted.jpg" alt="Ted">
+
+    </div>
+
+
+    <h2>📺 Top Rated Movies</h2>
+    <div class="movie-row">
+        <div class="movie-row">
+    <img src="images/joker.jpg" alt="Joker">
+    <img src="images/inception.jpg" alt="Inception">
+    <img src="images/conjuring.jpg" alt="Conjuring">
+    <img src="images/gladiator.jpg" alt="Gladiator">
+    <img src="images/oppenheimer.jpg" alt="oppenheimer">
+    <img src="images/titanic.jpg" alt="Titanic">
+   
+<div class="movie-row">
+    <img src="images/it.jpg" alt="IT">
+    <img src="images/frankenstein.jpg" alt="Frankenstein">
+    <img src="images/conjuring.jpg" alt="Conjuring">
+    <img src="images/smile.jpg" alt="Smile">
+</div>
+    <img src="images/gonegirl.jpg" alt="Gone Girl">
+    <img src="images/darkknight.jpg" alt="The Dark Knight">
+</div>
+  <div class="movie-row">
+    <img src="images/deadpool.jpg" alt="Deadpool">
+    <img src="images/blackpanther.jpg" alt="Black Panther">
+    <img src="images/titanic.jpg" alt="Titanic">
+</div>  
+    <img src="images/jhonwick.jpg" alt="John Wick">
+    <img src="images/dune.jpg" alt="Dune">
+</div>
+
+    <footer>
+        © 2026 Movie Recommendation System | Created By Faiqa Feroz
+    </footer>
+
+</div>
+
+<script>
+    function recommendMovie(genre) {
+        let movie = "";
+
+        if (genre === "action") {
+            movie = "Mad Max: Fury Road";
+        } else if (genre === "comedy") {
+            movie = "The Hangover";
+        } else if (genre === "thriller") {
+            movie = "Inception";
+        }
+
+        document.getElementById("result").innerHTML = "🎥 Recommended Movie: " + movie;
+    }
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
